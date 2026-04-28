@@ -5,7 +5,7 @@ import "./index.css";
 import Exercise from "./Exercise.jsx";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode> 
+  <React.StrictMode>
     <Exercise/>
   </React.StrictMode>,
-)
+);

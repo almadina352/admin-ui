@@ -1,35 +1,26 @@
-import React from "react";
-import UserCard from "./UserCard";
+import React from 'react';
+import PostCard from './PostCard'; // Mengambil desain card dari Soal 2
+import { postsData } from './postsData'; // Mengambil array data dari file postsData.js
 
 function Exercise() {
   return (
-    <>
-      <div className="min-h-screen bg-gray-100 p-6">
-        <h1 className="text-3xl font-bold text-center mb-6 text-blue-700">
-          User Cards
-        </h1>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <UserCard 
-                name="Kholifah" 
-                email="kholifah@gmail.com"
-                street="Jl. Gajah Barat"
-                city="Semarang"
-            />
-            <UserCard 
-                name="Rana" 
-                email="rana@gmail.com"
-                street="Jl. Merdeka"
-                city="Jakarta"
-            />
-            <UserCard 
-                name="Almadina" 
-                email="almadina@gmail.com"
-                street="Jl. Pine Rd"
-                city="Chicago"
-            />
-        </div>
+    <div className="min-h-screen p-8 bg-gray-100">
+      <h1 className="mb-8 text-2xl font-bold text-center text-gray-800">Post Cards</h1>
+      
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        
+        {postsData.map((post) => (
+          <PostCard
+            key={post.id}
+            id={post.id}
+            userId={post.userId}
+            title={post.title}
+            body={post.body}
+          />
+        ))}
+
       </div>
-    </>
+    </div>
   );
 }
 

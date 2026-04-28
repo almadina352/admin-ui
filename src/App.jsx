@@ -4,7 +4,7 @@ function App() {
   return (
     <main className="min-h-screen bg-special-mainBg flex justify-center items-center">
       {/* container start */}
-      <div className= "w-full max-w-sm">
+      <div className="w-full max-w-sm">
         {/* logo start */}
         <div className="flex justify-center font-poppins tracking-wide text-primary text-4xl">
           <span className="font-bold">FINE</span>
@@ -12,16 +12,16 @@ function App() {
           <span className="font-bold">.IO</span>
         </div> 
         {/* logo end */}
-        {/* form start */}
-        <div className="mt-16">
+                {/* form start */}
+        <div className="mb-6">
           <form action="">
-            <div className="mb-6">
+            <div>
               <label htmlFor="email" className="block text-sm mb-2">
                 Email address
               </label>
               <input
                 type="email"
-                className=" py-3 pl-4 text-sm rounded-md w-full bg-special-mainBg border border-gray-03 text-gray-01 focus:border-black focus:outline-none focus:ring-0"
+                className="py-3 pl-4 text-sm rounded-md w-full bg-special-mainBg border border-gray-03 text-gray-01 focus:border-black focus:outline-none focus:ring-0"
                 placeholder="hello@example.com"
                 name="email"
                 id="email"
@@ -33,7 +33,7 @@ function App() {
               </label>
               <input
                 type="password"
-                className=" py-3 pl-4 text-sm rounded-md w-full bg-special-mainBg border border-gray-03 text-gray-01 focus:border-black focus:outline-none focus:ring-0"
+                className="py-3 pl-4 text-sm rounded-md w-full bg-special-mainBg border border-gray-03 text-gray-01 focus:border-black focus:outline-none focus:ring-0"
                 placeholder="************"
                 name="password"
                 id="password"
@@ -51,7 +51,7 @@ function App() {
               </label>
             </div>
             <button
-              className="rounded-md text-sm bg-primary w-full text-white"
+              className="h-12 rounded-md text-sm bg-primary w-full text-white"
               type="submit"
             >
               Login
@@ -59,10 +59,10 @@ function App() {
           </form>
         </div>
         {/* form end */}
-        {/* teks start */}
+        				{/* teks start */}
         <div className="my-9 px-7 flex flex-col justify-center items-center text-xs text-gray-03">
           <div className="border border-gray-05 w-full"></div>
-          <div className="px-2 bg-special-mainBg absolute"> or sign in with</div>
+          <div class="px-2 bg-special-mainBg absolute"> or sign in with</div>
         </div>
         {/* teks end */}
         {/* sign in with google start */}
@@ -123,6 +123,21 @@ function App() {
         <div className="flex justify-center">
           <a className="text-primary text-sm font-bold">Create an account</a>
         </div>
+        {/* link end */}
+        {/* logo start */}
+        <div></div>
+        {/* logo end */}
+        {/* form start */}
+        <div></div>
+        {/* form end */}
+        {/* teks start */}
+        <div></div>
+        {/* teks end */}
+        {/* sign in with google start */}
+        <div></div>
+        {/* sign in with google end */}
+        {/* link start */}
+        <div></div>
         {/* link end */}
       </div>
       {/* container end */}
