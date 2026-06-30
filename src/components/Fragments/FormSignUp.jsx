@@ -23,7 +23,7 @@ function FormSignUp() {
               label="Email Address"
               id="email"
               type="email"
-              placeholder="almadina@gmail.com"
+              placeholder="hello@example.com"
               name="email"
             />
           </div>
