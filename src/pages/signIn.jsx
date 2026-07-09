@@ -2,8 +2,9 @@ import { useContext, useState } from "react";
 import AuthLayout from "../components/Layouts/AuthLayout";
 import FormSignIn from "../components/Fragments/FormSignIn";
 import { loginService } from "../services/authService";
-import { AuthContext } from "../context/AuthContext";
+import { AuthContext } from "../context/authContext";
 import AppSnackbar from "../components/Elements/AppSnackbar";
+import DarkModeToggle from "../components/Elements/DarkModeToggle";
 
 function SignIn() {
   const { login } = useContext(AuthContext);
@@ -30,6 +31,10 @@ function SignIn() {
   return (
     <AuthLayout>
       <FormSignIn onSubmit={handleLogin} />
+
+      <div className="mt-6 flex justify-center">
+        <DarkModeToggle />
+      </div>
 
         <AppSnackbar
           open={snackbar.open}

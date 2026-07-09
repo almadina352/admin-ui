@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "./context/authContext";
+import ExpensePage from "./pages/expense";
 
 function App() {
   const { user } = useContext(AuthContext);
@@ -54,6 +55,14 @@ function App() {
       element: (
         <RequireAuth>
           <BalancePage />
+        </RequireAuth>
+      ),
+    },
+    {
+      path: "/expense",
+      element: (
+        <RequireAuth>
+          <ExpensePage />
         </RequireAuth>
       ),
     },
